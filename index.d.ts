@@ -22,5 +22,4 @@ export declare class SmsInbox extends IonicNativePlugin {
     listSMS(filter: any): Promise<any>;
     startWatch(): Observable<any>;
     enableIntercept(on_off: boolean): Promise<any>;
-    setOptions(options: any): Promise<any>;
 }

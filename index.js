@@ -43,16 +43,9 @@ var SmsInbox = (function (_super) {
     function SmsInbox() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    // @Cordova()
-    // sendSMS(address: string, text: string): Promise<any> { return; }
     SmsInbox.prototype.listSMS = function (filter) { return; };
-    // @Cordova()
-    // deleteSMS(filter: any): Promise<any> { return; }
     SmsInbox.prototype.startWatch = function () { return; };
     SmsInbox.prototype.enableIntercept = function (on_off) { return; };
-    // @Cordova()
-    // restoreSMS(msg_or_msgs: string | [string]): Promise<any> { return; }
-    SmsInbox.prototype.setOptions = function (options) { return; };
     return SmsInbox;
 }(IonicNativePlugin));
 SmsInbox.decorators = [
@@ -81,12 +74,6 @@ __decorate([
     __metadata("design:paramtypes", [Boolean]),
     __metadata("design:returntype", Promise)
 ], SmsInbox.prototype, "enableIntercept", null);
-__decorate([
-    Cordova(),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Promise)
-], SmsInbox.prototype, "setOptions", null);
 SmsInbox = __decorate([
     Plugin({
         pluginName: 'SmsInbox',
