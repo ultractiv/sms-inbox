@@ -1,10 +1,13 @@
 {
   "name": "@ionic-native/sms-inbox",
-  "version": "3.12.0",
-  "description": "Ionic Native - Native plugins for ionic apps",
+  "version": "1.0.1",
+  "description": "Ionic Native - Native plugins for using cordova-plugin-sms",
   "module": "index.js",
   "typings": "index.d.ts",
-  "author": "ionic",
+  "author":{
+  	"name": "Yemi Agbetunsin",
+  	"email": "agbetunsin@ultractiv.com"
+  },
   "license": "MIT",
   "peerDependencies": {
     "@ionic-native/core": "^3.6.0",
@@ -13,6 +16,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/ionic-native.git"
+    "url": "https://github.com/ultractiv/sms-inbox.git"
   }
 }
