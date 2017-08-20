@@ -18,8 +18,18 @@ import { Observable } from 'rxjs/Observable';
  *    .catch(error => console.log('Error getting messages', error))
  * ```
  */
+export interface MessageFilters {
+    _id?: number;
+    read?: number;
+    indexFrom?: number;
+    maxCount?: number;
+    address?: string;
+    addresses?: string[];
+    body?: string;
+    contents?: string[];
+}
 export declare class SmsInbox extends IonicNativePlugin {
-    listSMS(filter: any): Promise<any>;
-    startWatch(): Observable<any>;
+    listSMS(filter: MessageFilters): Promise<any>;
+    startWatch(filter: MessageFilters): Observable<any>;
     enableIntercept(on_off: boolean): Promise<any>;
 }

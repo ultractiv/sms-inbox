@@ -20,31 +20,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Plugin, IonicNativePlugin, Cordova } from '@ionic-native/core';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-/**
- * @name SmsInbox
- * @description
- * This plugin helps to operate on SMS on Android phones.
- *
- * @usage
- * ```typescript
- * import { SmsInbox } from '@ionic-native/sms-inbox';
- *
- *
- * constructor(private sms_inbox: SmsInbox) { }
- *
- * ...
- * this.sms_inbox.listSMS({ addresses:['Google', 'Facebook'] })
- *    .then(messages => console.log(`Found ${messages.length} from Google and Facebook`))
- *    .catch(error => console.log('Error getting messages', error))
- * ```
- */
 var SmsInbox = (function (_super) {
     __extends(SmsInbox, _super);
     function SmsInbox() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     SmsInbox.prototype.listSMS = function (filter) { return; };
-    SmsInbox.prototype.startWatch = function () { return; };
+    SmsInbox.prototype.startWatch = function (filter) { return; };
     SmsInbox.prototype.enableIntercept = function (on_off) { return; };
     return SmsInbox;
 }(IonicNativePlugin));
@@ -65,7 +47,7 @@ __decorate([
         clearFunction: 'stopWatch'
     }),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Observable)
 ], SmsInbox.prototype, "startWatch", null);
 __decorate([
